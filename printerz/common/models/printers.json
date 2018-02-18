@@ -1,0 +1,32 @@
+{
+  "name": "Printers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "printer_name": {
+      "type": "string",
+      "required": true
+    },
+    "printer_ipAddress": {
+      "type": "string"
+    },
+    "printer_location": {
+      "type": "string"
+    },
+    "printer_globalPolicy": {
+      "type": "string"
+    },
+    "printer_comment": {
+      "type": "string",
+      "required": true,
+      "default": "No Comment"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
